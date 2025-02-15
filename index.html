@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitur Aplikasi Kecil</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      gap: 25px; /* Jarak antar fitur */
+    }
+
+    .feature-container {
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .feature {
+      width: 50px;
+      height: 50px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-3px);
+    }
+
+    /* Menyesuaikan ukuran gambar agar proporsional dengan kotak */
+    .feature img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .title {
+      margin-top: 5px;
+      font-weight: bold;
+      font-size: 10px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Fitur Pencarian -->
+    <a href="pencarian.html" class="feature-container">
+      <div class="feature">
+        <img src="https://iili.io/2phmQWB.png">
+      </div>
+      <div class="title">Berita & Informasi</div>
+    </a>
+    
+    <!-- Fitur Pengaturan -->
+    <a href="pengaturan.html" class="feature-container">
+      <div class="feature">
+        <img src="https://iili.io/2phmZiP.png">
+      </div>
+      <div class="title">Tutorial Digital</div>
+    </a>
+    
+    <!-- Fitur Dokumen -->
+    <a href="dokumen.html" class="feature-container">
+      <div class="feature">
+        <img src="https://iili.io/2phmPOx.png">
+      </div>
+      <div class="title">Cara Cuan</div>
+    </a>
+  </div>
+</body>
+</html>
